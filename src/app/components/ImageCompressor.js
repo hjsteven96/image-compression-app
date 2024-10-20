@@ -145,7 +145,7 @@ export default function ImageCompressor() {
                     <input {...getInputProps()} />
                     {isDragActive ? (
                         <p className="text-gray-500">
-                            이미지를 여기에 놓으세요...
+                            이미지를 여기에 놓으세요.
                         </p>
                     ) : (
                         <p className="text-gray-500">
@@ -170,7 +170,9 @@ export default function ImageCompressor() {
                                     alt={image.name}
                                     className="w-full h-32 object-cover mb-2"
                                 />
-                                <p className="text-sm truncate">{image.name}</p>
+                                <p className="text-sm truncate text-black">
+                                    {image.name}
+                                </p>
                                 <p className="text-xs text-gray-500">
                                     {formatFileSize(image.size)}
                                 </p>
@@ -247,9 +249,9 @@ export default function ImageCompressor() {
                     <div className="h-10"></div>
 
                     <div className="border-t border-gray-200 pt-8 mb-6">
-                        <h2 className="text-xl mb-4 text-black">
+                        <h3 className="text-xl mb-4 text-black">
                             이미지 압축 상세
-                        </h2>
+                        </h3>
                     </div>
 
                     <ul className="space-y-6">
