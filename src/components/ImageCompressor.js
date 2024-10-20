@@ -131,10 +131,6 @@ export default function ImageCompressor() {
 
     return (
         <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
-            <h1 className="text-2xl font-bold mb-6 text-center text-black">
-                이미지 압축기
-            </h1>
-
             {compressedImages.length === 0 && (
                 <div
                     {...getRootProps()}

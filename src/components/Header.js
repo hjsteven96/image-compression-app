@@ -18,16 +18,14 @@ export default function Header() {
                             이미지 자르기
                         </Link>
                     </li>
-                    {/* <li>
-                        <Link href="/convert" className="hover:underline">
+                    <li>
+                        <Link
+                            href="/convert-to-jpg"
+                            className="hover:underline"
+                        >
                             JPG로 변환
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/edit" className="hover:underline">
-                            포토 에디터
-                        </Link>
-                    </li> */}
                 </ul>
             </nav>
         </header>

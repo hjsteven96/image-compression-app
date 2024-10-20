@@ -37,6 +37,16 @@ export default function Home() {
                                 </p>
                             </div>
                         </Link>
+                        <Link href="/convert-to-jpg" className="block">
+                            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                                <h2 className="text-xl font-semibold mb-2">
+                                    JPG로 변환
+                                </h2>
+                                <p className="text-gray-600">
+                                    이미지를 JPG 형식으로 변환합니다.
+                                </p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </main>

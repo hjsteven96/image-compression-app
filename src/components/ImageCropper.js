@@ -146,10 +146,6 @@ export default function AdvancedImageCropper() {
 
     return (
         <div className="max-w-6xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
-            <h1 className="text-2xl font-bold mb-6 text-center text-black">
-                이미지 자르기
-            </h1>
-
             {!imageSrc && (
                 <div
                     {...getRootProps()}
@@ -165,6 +161,8 @@ export default function AdvancedImageCropper() {
                     ) : (
                         <p className="text-gray-500">
                             이미지를 드래그 앤 드롭하거나 클릭하여 선택하세요
+                            <br />
+                            (여러 개 선택 가능)
                         </p>
                     )}
                 </div>
