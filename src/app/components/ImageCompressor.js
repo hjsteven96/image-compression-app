@@ -182,9 +182,9 @@ export default function ImageCompressor() {
                     <div className="flex items-center space-x-2 mt-4">
                         <Label
                             htmlFor="quality"
-                            className="whitespace-nowrap text-black"
+                            className="whitespace-nowrap text-black w-12 text-center"
                         >
-                            품질:
+                            품<br />질
                         </Label>
                         <Slider
                             id="quality"
