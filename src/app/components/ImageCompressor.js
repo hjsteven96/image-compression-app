@@ -184,7 +184,7 @@ export default function ImageCompressor() {
                             htmlFor="quality"
                             className="whitespace-nowrap text-black"
                         >
-                            압축품질:
+                            품질:
                         </Label>
                         <Slider
                             id="quality"
