@@ -131,7 +131,7 @@ export default function ImageCompressor() {
 
     return (
         <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
-            <h1 className="text-2xl font-bold mb-6 text-center">
+            <h1 className="text-2xl font-bold mb-6 text-center text-black">
                 이미지 압축기
             </h1>
 
@@ -159,7 +159,7 @@ export default function ImageCompressor() {
 
             {images.length > 0 && compressedImages.length === 0 && (
                 <div className="mt-6">
-                    <h2 className="text-lg font-semibold mb-2">
+                    <h2 className="text-lg font-semibold mb-2 text-black">
                         선택된 이미지:
                     </h2>
                     <div className="grid grid-cols-2 gap-4 mb-4">
@@ -178,7 +178,10 @@ export default function ImageCompressor() {
                         ))}
                     </div>
                     <div className="flex items-center space-x-2 mt-4">
-                        <Label htmlFor="quality" className="whitespace-nowrap">
+                        <Label
+                            htmlFor="quality"
+                            className="whitespace-nowrap text-black"
+                        >
                             압축품질:
                         </Label>
                         <Slider
@@ -189,7 +192,9 @@ export default function ImageCompressor() {
                             onValueChange={(value) => setQuality(value[0])}
                             className="flex-grow"
                         />
-                        <span className="w-12 text-right">{quality}%</span>
+                        <span className="w-12 text-right text-black">
+                            {quality}%
+                        </span>
                     </div>
                     <Button onClick={compressAllImages} className="mt-4 w-full">
                         이미지 압축
@@ -211,7 +216,7 @@ export default function ImageCompressor() {
                             ></div>
                         </div>
                     </div>
-                    <p className="text-center mb-2 text-lg font-semibold">
+                    <p className="text-center mb-2 text-lg font-semibold text-black">
                         총 {getTotalCompressionRatio()}% 압축
                     </p>
                     <p className="text-center text-sm text-gray-600 mb-6">
@@ -241,7 +246,7 @@ export default function ImageCompressor() {
                     </Button>
 
                     <div className="border-t border-gray-200 pt-8 mb-6">
-                        <h2 className="text-xl font-semibold mb-4">
+                        <h2 className="text-xl font-semibold mb-4 text-black">
                             개별 이미지 압축 결과
                         </h2>
                     </div>
@@ -263,7 +268,7 @@ export default function ImageCompressor() {
                                         />
                                     </div>
                                     <div className="w-full sm:w-2/3">
-                                        <p className="font-semibold mb-2">
+                                        <p className="font-semibold mb-2 text-black">
                                             파일명: {compressedImage.name}
                                         </p>
                                         <div className="w-full h-4 bg-gray-200 rounded-full overflow-hidden mb-2">
