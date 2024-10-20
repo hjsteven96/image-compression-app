@@ -244,10 +244,11 @@ export default function ImageCompressor() {
                     >
                         압축된 이미지 다운로드
                     </Button>
+                    <div className="h-10"></div>
 
                     <div className="border-t border-gray-200 pt-8 mb-6">
-                        <h2 className="text-xl font-semibold mb-4 text-black">
-                            개별 이미지 압축 결과
+                        <h2 className="text-xl mb-4 text-black">
+                            이미지 압축 상세
                         </h2>
                     </div>
 
@@ -268,8 +269,8 @@ export default function ImageCompressor() {
                                         />
                                     </div>
                                     <div className="w-full sm:w-2/3">
-                                        <p className="font-semibold mb-2 text-black">
-                                            파일명: {compressedImage.name}
+                                        <p className="mb-2 text-black">
+                                            {compressedImage.name}
                                         </p>
                                         <div className="w-full h-4 bg-gray-200 rounded-full overflow-hidden mb-2">
                                             <div
