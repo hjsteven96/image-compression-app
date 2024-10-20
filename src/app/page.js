@@ -1,5 +1,9 @@
 import ImageCompressor from "./components/ImageCompressor";
 import Head from "next/head";
+export const metadata = {
+    title: "심플 이미지 압축",
+    description: "가장 빠른 간편한 이미지 압축",
+};
 
 export default function Home() {
     return (
