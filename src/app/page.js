@@ -47,6 +47,16 @@ export default function Home() {
                                 </p>
                             </div>
                         </Link>
+                        <Link href="/upscale" className="block">
+                            <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                                <h2 className="text-xl font-semibold mb-2">
+                                    이미지 확대
+                                </h2>
+                                <p className="text-gray-600">
+                                    이미지를 확대합니다.
+                                </p>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </main>

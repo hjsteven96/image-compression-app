@@ -26,6 +26,11 @@ export default function Header() {
                             JPG로 변환
                         </Link>
                     </li>
+                    <li>
+                        <Link href="/upscale" className="hover:underline">
+                            이미지 확대
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>
